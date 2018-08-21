@@ -1,5 +1,5 @@
-var yes = new Audio('sound/yes.wav');
-var no = new Audio('sound/no.wav');
+var yes = new Audio('yes.wav');
+var no = new Audio('no.wav');
 
 $(document).ready(function(){
     $('#obutton').click(function(){
