@@ -1,0 +1,307 @@
+@link-color: #0099CC;
+@drop-color: #66CC66;
+@figcaption-color: #CCCCFF;
+@img-color: #3399FF;
+@img-color-hover: #66FF00;
+@h1-color: #66CC33;
+@p-color: #FFCC66;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        background: url('tlo/spiration dark.png');
+
+        #nav {
+            background-color: #303030 !important;
+
+        #navbar {
+            color: paleturquoise;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Racing Sans One', sans-serif;
+        }
+
+    }
+
+        #link {
+            color: @link-color;
+        }
+
+        #drop:hover {
+            background-color: @drop-color;
+        }
+
+        .jumpers {
+            margin-top: 35px;
+            margin-bottom: 35px;
+
+            header {
+
+                h1 {
+                    color: @h1-color;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    font-family: 'Arbutus', sans-serif;
+                    font-weight: 100;
+                }
+
+                p {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: @p-color;
+                    text-align: justify;
+                    line-height: 150%;
+                    font-size: 18px;
+                }
+            }
+
+            img {
+                border: 1px solid @img-color;
+                border-radius: 20px;
+                transition: all 300ms ease-in-out;
+                &:hover {
+                    transform: scale(0.9);
+                    border: 1px solid @img-color-hover;
+                    cursor: pointer;
+                    filter: grayscale(100%);
+                }
+            }
+
+            figcaption {
+                margin-top: 8px;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: @figcaption-color;
+                font-family: 'Amarante', sans-serif;
+            }
+        }
+
+        #opakowanie {
+            background-color: #303030;
+            padding-top: 25px;
+            padding-bottom: 5px;
+
+        #writter {
+            margin-top: 50px;
+            margin-bottom: 75px;
+
+            .jumbotron {
+                background: url("tlo/connectwork.png");
+                padding-top: 20px;
+                padding-bottom: 25px;
+                box-shadow: 0 0 7px 7px palevioletred;
+
+                h1 {
+                    color: green;
+                    text-transform: uppercase;
+                    font-family: 'Cantora One', sans-serif;
+                    letter-spacing: 3px;
+                }
+                
+                .lead {
+                    color: burlywood;
+                }
+
+                p {
+                    color: #99CC00;
+                }
+
+                hr {
+                    background-color: slateblue;
+                }
+
+                #obutton {
+                    background-color: lightgreen;
+                    margin-right: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: 'Markazi Text', sans-serif;
+                    font-size: 22px;
+                    color: green;
+                    &:hover {
+                        background-color: green;
+                        color: lightgreen;
+                    }
+                }
+
+                #tbutton {
+                    background-color: lightcoral;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: 'Markazi Text', sans-serif;
+                    font-size: 22px;
+                    color: red;
+                    &:hover {
+                        background-color: red;
+                        color: lightcoral;
+                    }
+                }
+            }
+        }
+
+    }
+
+        #pojemnik {
+            padding-left: 0;
+            padding-right: 0;
+
+        #card {
+
+            #card-change {
+                background: url("tlo/grey_wash_wall.png");
+                h5 {
+                    color: salmon;
+                }
+
+                p {
+                    color: peru;
+                }
+
+                .text-muted {
+                    color: #259462 !important; 
+                }
+            }
+
+            #card-change-center {
+                background: url("tlo/grey_wash_wall.png");
+                h5 {
+                    color: palevioletred;
+                }
+
+                p {
+                    color: plum;
+                }
+
+                .text-muted {
+                    color: #259429 !important; 
+                }
+            }
+
+            #card-change-right {
+                background: url("tlo/grey_wash_wall.png");
+                h5 {
+                    color: greenyellow;
+                }
+
+                p {
+                    color: peru;
+                }
+
+                .text-muted {
+                    color: #259442 !important; 
+                }
+            }
+
+            h5 {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-family: 'Almendra', sans-serif;
+            }
+        }
+
+    }
+
+        }
+    }
+
+@media (max-width: 767px) {
+    header {
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+    #writter {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+
+    .jumbotron {
+        box-shadow: 0 0 5px 5px silver !important;
+            h1 {
+                font-size: 30px;
+            }
+
+            .lead {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            #obutton {
+                font-family: normal !important;
+                font-size: 11px !important;
+            }
+
+            #tbutton {
+                font-family: normal !important;
+                font-size: 11px !important;
+            }
+        }
+    }
+
+    #warning {
+        #primary {
+            font-family: normal !important;
+            font-size: 14px;
+        }
+    }
+
+    #card-change {
+        margin-bottom: 0;
+        h5 {
+            font-family: normal !important;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .text-muted {
+            font-size: 11px;
+        }
+    }
+
+    #card-change-center {
+        margin-bottom: 0;
+        h5 {
+            font-family: normal !important;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .text-muted {
+            font-size: 11px;
+        }
+    }
+
+    #card-change-right {
+        margin-bottom: 0;
+        h5 {
+            font-family: normal !important;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .text-muted {
+            font-size: 11px;
+        }
+    }
+}
